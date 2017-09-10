@@ -1,5 +1,5 @@
 ;(function () {
-    var socket = io.connect('http://localhost:8890'),
+    var socket = io.connect(':8890'),
         form = document.querySelector('#formMessage'),
         error = document.querySelector('#errorMessage'),
         messages = document.querySelector('#messages');
