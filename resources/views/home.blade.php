@@ -8,9 +8,11 @@
                 <div class="panel-heading">Messages:</div>
                 <div class="panel-body">
                     <div id="messages">
-                        @foreach($messages as $message)
-                            <p class="new-message">{{ $message }}</p>
-                        @endforeach
+                        @if (!is_null($messages))
+                            @foreach ($messages as $message)
+                                <p class="new-message">{{ $message }}</p>
+                            @endforeach
+                        @endif
                     </div>
                 </div>
             </div>
